@@ -12,10 +12,10 @@ Given("open newtours application", ()=>{
     cy.visit("https://demo.guru99.com/test/newtours/")
 })
 
-//When("provide valid {string} and {string}", (userName, password)=>{
-//    cy.get('[name=userName]').type(userName)
-//    cy.get('[name=password]').type(password)
-//})
+When("provide valid {string} and {string}", (userName, password)=>{
+    cy.get('[name=userName]').type(userName)
+    cy.get('[name=password]').type(password)
+})
 
 When("I log in as Following", (datatable)=>{
     datatable.hashes().forEach(element => {

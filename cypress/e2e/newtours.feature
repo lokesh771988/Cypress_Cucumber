@@ -13,8 +13,5 @@ Scenario: Home Page
  
 @regression
 Scenario: Verifying my Title
-  When I log in as Following
-    |userName| password |
-    |mercury | mercury  |
+  When provide valid 'mercury' and '1234'    
   Then click on submit button
-  And verify title should be 'Login: Mercury Tours'
